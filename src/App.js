@@ -1,8 +1,9 @@
-import './App.css';
+import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css"
 
 function App() {
   return (
-    <h2 style={{textAlign: "center"}}>testing...123</h2>
+    <h2>Portfolio Project</h2>
   );
 }
 
