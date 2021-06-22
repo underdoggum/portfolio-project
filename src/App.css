@@ -44,10 +44,16 @@ nav ul li {
   border-top: 0.1875rem solid var(--primary-dark);
 }
 
+/* for the logo */
 .navbar-brand {
   max-width: 17.25rem;
   padding: 0 !important;
   height: 4rem !important;
+}
+@media(max-width: 768px) {
+  .navbar-brand {
+    width: 7rem;
+  }
 }
 
 /* this is for mouseover highlights */
@@ -87,10 +93,19 @@ nav ul li {
   text-transform: uppercase;
 }
 
+
 /**********TYPED TEXT************/
 .typed-text {
   font-size: 2rem;
   color: var(--primary-white);
+}
+@media(max-width: 768px) {
+  .main-info h1 {
+    font-size: 1.7rem !important;
+  }
+  .typed-text {
+    font-size: 1.3rem !important;
+  }
 }
 
 /**********HEADER MAIN OFFER BUTTON************/
@@ -103,10 +118,22 @@ nav ul li {
   margin: 2rem;
 }
 
+.btn-main-offer:hover {
+  text-decoration: none;
+  background-color: var(--primary-hover-red);
+  color: var(--primary-white);
+  transition: 0.2s ease-in-out;
+}
+
 /**********PARTICLES JS************/
 .tsparticles-canvas-el {
   position: absolute;
   height: 100vh;
   width: 100vw;
   z-index: 1;
+}
+@media(max-width: 768px) {
+  .particles-canvas {
+    display: none;
+  }
 }

@@ -6,9 +6,8 @@ const Header = () => {
     <div className="header-wrapper">
       <div className="main-info">
         <h1>
-          How does physics even work?
+          Front-End Web Development
         </h1>
-        {/* <h1>Front-end Web Development</h1> */}
         <Typed
           className="typed-text"
           strings={["y=mx+b", "Mitosis", "Flashpoints", "AP Calculus"]}
