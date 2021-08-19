@@ -1,3 +1,14 @@
+This is a ReactJS-based portfolio website that showcases skills, experience, etc for use in your own personal/professional endeavors.
+
+The example created here (messing around, still developing) can be viewed at nathannoack.com
+
+
+This particular project uses Bootstrap 4 for the core styling as well as a few NPM modules for pretty yet easy implementation into the website (React Particles, Responsive Carousel, and Popup Box, just to name a few).
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
