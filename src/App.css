@@ -1,21 +1,25 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@200&display=swap');
 
 :root {
   --primary-white: #ffffff;
   --primary-light-grey: #f4f4f4;
+  --primary-grey: #ccd1d9;
+  --primary-dark-grey: #666;
   --primary-orange: #f9ab00;
   --primary-dark: rgb(52, 58, 64);
   --primary-red: #ef4035;
   --primary-hover-red: #f33501;
+  --primary-black: #000000;
+  --primary-green: #00FF00;
+  --primary-transparent-black: rgba(0, 0, 0, 0.7)
 }
 
 body {
   font-family: "Noto Sans JP", sans-serif !important;
 }
 
-/**********NAVBAR************/
 
+/**********NAVBAR************/
 nav {
   z-index: 2;
 }
@@ -25,7 +29,6 @@ nav {
 }
 
 /**********MENU LINKS************/
-
 /* styling of links */
 nav a.nav-link {
   letter-spacing: 0.0375rem;
@@ -42,7 +45,16 @@ nav ul li {
   margin-right: 0.75rem;
   margin-left: 0.75rem;
   color: var(--primary-white) !important;
-  border-top: 0.1875rem solid var(--primary-dark);
+  border-bottom: 0.1875rem solid var(--primary-dark);
+}
+
+/* this is for mouseover highlights */
+.navbar-nav > li > a.active, .navbar-nav > li > a:focus {
+  border-bottom: 0.1875rem solid var(--primary-orange);
+}
+
+.navbar-nav > li > a:hover {
+  border-bottom: 0.1875rem solid var(--primary-orange);
 }
 
 /* for the logo */
@@ -57,22 +69,14 @@ nav ul li {
   }
 }
 
-/* this is for mouseover highlights */
-.navbar-nav > li > a.active, .navbar-nav > li > a.active:focus {
-  border-top: 0.1875rem solid var(--primary-orange);
-}
-
-.navbar-nav > li > a:hover {
-  border-top: 0.1875rem solid var(--primary-orange);
-}
 
 /**********HEADER************/
 .header-wrapper {
   position: relative;
-  background: url(IMG_0098.JPG) no-repeat;
+  background: url(winding-road.jfif) no-repeat;
   background-size: cover;
   background-position: center;
-  height: 90vh;
+  height: 100vh;
 }
 
 .main-info {
@@ -91,11 +95,10 @@ nav ul li {
 }
 .main-info h1 {
   color: var(--primary-orange);
+  background-color: var(--primary-light-grey);
   text-transform: uppercase;
 }
 
-
-/**********TYPED TEXT************/
 .typed-text {
   font-size: 2rem;
   color: var(--primary-white);
@@ -108,6 +111,7 @@ nav ul li {
     font-size: 1.3rem !important;
   }
 }
+
 
 /**********HEADER MAIN OFFER BUTTON************/
 .btn-main-offer {
@@ -126,6 +130,7 @@ nav ul li {
   transition: 0.2s ease-in-out;
 }
 
+
 /**********PARTICLES JS************/
 .tsparticles-canvas-el {
   position: absolute;
@@ -138,6 +143,7 @@ nav ul li {
     display: none;
   }
 }
+
 
 /**********ABOUT ME************/
 .photo-wrap {
@@ -163,6 +169,7 @@ nav ul li {
     width: 10rem;
   }
 }
+
 
 /**********SERVICES************/
 .services {
@@ -195,11 +202,12 @@ nav ul li {
 }
 
 .services .box {
-  height: 20rem;
+  height: 30rem;
   border-bottom: 0.3125rem solid var(--primary-orange);
   padding: 0.625rem;
   margin-bottom: 1.875rem;
   background: var(--primary-white);
+  transition: 0.5s ease-in-out;
 }
 
 .services .box:hover {
@@ -213,4 +221,379 @@ nav ul li {
 
 .services .box:hover .circle {
   background: var(--primary-light-grey);
+}
+
+
+/**********EXPERIENCE************/
+.experience {
+  padding: 0.5rem;
+}
+
+.experience-wrapper {
+  position: relative;
+  padding: 3.125rem 0;
+  overflow: hidden;
+}
+
+.experience h1 {
+  text-transform: uppercase;
+  color: var(--primary-orange);
+}
+
+/* grey middle line */
+.experience-wrapper::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 50%;
+  margin-left: -0.0625rem;
+  width: 0.125rem;
+  height: 100%;
+  background: var(--primary-grey);
+  z-index: 1;
+}
+
+.timeline-block {
+  width: calc(50% + 0.5rem);
+  display: flex;
+  justify-content: space-between;
+  clear: both;
+}
+
+.timeline-block-right {
+  float: right;
+}
+
+.timeline-block-left {
+  float: left;
+  direction: rtl;
+}
+
+.marker {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  border: 0.3125rem solid var(--primary-dark);
+  background: var(--primary-orange);
+  margin-top: 0.625rem;
+  z-index: 3;
+}
+
+.timeline-content {
+  width: 95%;
+  padding: 0 0.9375rem;
+  color: var(--primary-dark-grey);
+  direction: ltr;
+}
+
+.timeline-content h3 {
+  margin-top: 00.3125rem;
+  color: var(--primary-red);
+  font-weight: 500;
+}
+
+/**********MEDIA************/
+@media(max-width: 768px) {
+  .experience .container {
+    padding-left: 0;
+  }
+  .experience-wrapper::before {
+    left: 0.5rem;
+    margin-bottom: 1.875rem;
+  }
+
+  .timeline-block-right {
+    float: none;
+    width: 100%;
+  }
+  
+  .timeline-block-left {
+    float: none;
+    direction: ltr;
+    width: 100%;
+  }
+}
+
+
+/**********PORTFOLIO************/
+.portfolio-wrapper {
+  background: var(--primary-light-grey);
+  padding: 3rem 0;
+}
+
+.portfolio-wrapper h1 {
+  color: var(--primary-orange)
+}
+
+.portfolio-image {
+  width: 15rem;
+  border: 1px solid var(--primary-orange);
+  padding: 0 0.5rem;
+}
+
+/*not working??? should be showing up horizontally*/
+/* also does not work AT ALL with phone devices */
+.portfolio-image-box {
+  /* width: 20% !important; */
+  position: relative;
+  margin: 1rem;
+}
+
+/**********OVERFLOW BOX************/
+.overflow {
+  position: absolute;
+  opacity: 0;
+  background: var(--primary-black);
+  width: 15rem;
+  height: 8rem;
+  top: 0;
+  border: 1px solid var(--primary-red);
+  cursor: pointer;
+}
+
+.portfolio-image-box:hover .overflow {
+  opacity: 60%;
+  transition: 0.3s ease-in-out;
+}
+
+.portfolio-icon {
+  position: absolute;
+  opacity: 0;
+  margin-left: -8rem;
+  margin-top: 3.6rem;
+  color: var(--primary-orange);
+  font-size: 1.5rem;
+}
+
+.portfolio-image-box:hover .portfolio-icon {
+  opacity: 70%;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.popupbox-wrapper {
+  margin-top: 7rem;
+}
+
+/**********OVERFLOW BOX************/
+.portfolio-image-popupbox {
+  width: 45rem;
+  padding: 0 0.5rem;
+}
+
+@media(max-width: 768px) {
+  .portfolio-image-popupbox {
+    width: 100%;
+  }
+}
+
+/* when a mobile device is rotated, the pop-up box cuts off too much, so this is required */
+@media(max-height: 570px) {
+  .portfolio-image-popupbox {
+    width: 50%;
+  }
+  .popupbox-wrapper {
+    height: 100%;
+  }
+}
+
+.hyper-link {
+  cursor: pointer;
+  color: var(--primary-orange);
+}
+
+.hyper-link:hover {
+  cursor: pointer;
+  color: var(--primary-red);
+}
+
+/**********TESTIMONIALS************/
+.testimonials {
+  background-image: url(images/testimonials-bg.jpg);
+  background-size: cover;
+  background-color: var(--primary-black);
+  text-align: center;
+  padding-bottom: 4rem;
+  margin-bottom: 0;
+  width: 100%;
+}
+
+.testimonials h1 {
+  color: var(--primary-orange);
+  padding: 3rem 0;
+  text-transform: uppercase;
+}
+
+.testimonials-content {
+  text-align: center;
+  max-width: 55rem;
+  margin: 0 auto 2rem auto;
+  background: var(--primary-transparent-black);
+}
+
+.myCarousel {
+  color: var(--primary-white);
+  background: transparent;
+  margin-top: -6%;
+  width: 54%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 6%;
+  padding-bottom: 8%;
+  padding-left: 5%;
+  padding-right: 5%;
+  height: 17.875rem;
+}
+
+.myCarousel h3 {
+  color: var(--primary-orange);
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.myCarousel p {
+  color: var(--primary-grey);
+}
+
+.carousel .slide img {
+  width: 10rem !important;
+  border-radius: 50%;
+  padding: 2rem 0;
+}
+
+.carousel .slide {
+  background: transparent !important;
+  height: 100% !important;
+}
+
+.carousel-root {
+  margin: auto !important;
+  margin-top: 3% !important;
+}
+
+
+/**********CONTACTS************/
+.contacts {
+  background: var(--primary-dark);
+  padding: 3rem 0;
+}
+
+.contacts h1 {
+  color: var(--primary-orange);
+  padding: 1.5rem 0;
+  text-transform: uppercase;
+}
+
+.contacts p {
+  color: var(--primary-light-grey);
+  font-size: 1.25rem;
+}
+
+.contacts input, .contacts textarea {
+  width: 100%;
+  box-sizing: border-box;
+  background: none;
+  resize: none;
+  border: 0;
+  border-bottom: 0.125rem solid var(--primary-dark-grey);
+  border-radius: 0;
+  color: var(--primary-orange);
+  outline: 0 !important;
+  box-shadow: none !important;
+  margin-bottom: 1rem;
+  padding-left: 0 !important;
+}
+
+.contacts .container {
+  padding: 4rem 0;
+}
+
+.contacts input:focus, .contacts textarea:focus {
+  background: transparent;
+  color: var(--primary-orange);
+  border-bottom: 0.125rem solid var(--primary-dark-grey);
+}
+
+.contacts textarea {
+  height: 11.95rem !important;
+}
+
+.contact-btn {
+  margin-top: 1rem;
+  width: 20%;
+  background: none;
+}
+
+.line {
+  position: relative;
+  top: -0.8rem;
+  width: 0;
+  height: 0.125rem;
+  background: var(--primary-orange);
+  display: inline-block;
+}
+
+input:focus+.line, textarea:focus+.line {
+  width: 100%;
+  transition: width 0.25s ease-in-out;
+}
+
+input.form-control {
+  margin: -0.3rem 0;
+}
+
+textarea.form-control {
+  margin: -0.3rem 0;
+}
+
+.error-message {
+  color: var(--primary-white);
+  background: var(--primary-hover-red);
+  text-align: left;
+}
+
+.success-message {
+  font-weight: 700;
+  color: var(--primary-green);
+}
+
+@media (max-width: 768px) {
+  .contacts {
+    overflow-x: hidden;
+  }
+
+  .contacts .container {
+    padding: 0 1rem;
+  }
+
+  .contacts p {
+    padding: 0 0.5rem;
+  }
+
+  .contact-btn {
+    width: 100%;
+  }
+}
+
+
+/**********FOOTER************/
+.footer {
+  background: var(--primary-black);
+  color: var(--primary-dark-grey);
+  padding: 3rem;
+}
+
+.footer a {
+  text-decoration: none;
+  color: var(--primary-dark-grey);
+}
+
+.footer a:hover {
+  text-decoration: none;
+  color: var(--primary-orange);
+  cursor: pointer;
+}
+
+.footer p {
+  margin-bottom: 0;
 }

@@ -1,13 +1,17 @@
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css"
+import Particles from "react-particles-js"
+
 import Navbar from "./components/Navbar"
 import Header from "./components/Header"
 import AboutMe from "./components/AboutMe"
 import Services from "./components/Services"
-import Particles from "react-particles-js";
+import Experience from "./components/Experience"
+import Portfolio from "./components/Portfolio"
+import Testamonials from "./components/Testamonials";
+import Contacts from "./components/Contacts"
+import Footer from "./components/Footer";
 
-//from the portfolio project via
-//https://www.youtube.com/watch?v=vD72tRK8mC4
 
 function App() {
   return (
@@ -37,6 +41,11 @@ function App() {
       <Header />
       <AboutMe />
       <Services />
+      <Experience />
+      <Portfolio />
+      <Testamonials />
+      <Contacts />
+      <Footer />
     </div>
   );
 }
