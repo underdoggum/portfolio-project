@@ -105,6 +105,8 @@ nav ul li {
 .typed-text {
   font-size: 2rem;
   color: var(--primary-white);
+  background-color: rgba(50, 50, 50, 0.5);
+  padding: 0 0.25em;
 }
 @media(max-width: 768px) {
   .main-info h1 {

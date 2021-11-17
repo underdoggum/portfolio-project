@@ -15,7 +15,8 @@ const Navbar = () => {
             <FontAwesomeIcon icon={faBars} style={{ color: "#fff" }}/>
           </button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul className="navbar-nav ms-auto"> {/*for bootstrap 5, need to use "ms-auto" for right justification instead of "mr-auto"*/}
+          {/*for bootstrap 5, need to use "ms-auto" for right justification instead of "mr-auto"*/}
+          <ul className="navbar-nav ms-auto">
             <li className="nav-item active">
               <Link to="header" offset={-100} className="nav-link" href="#">Home <span className="sr-only"></span></Link>
             </li>
