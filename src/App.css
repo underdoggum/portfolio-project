@@ -94,9 +94,12 @@ nav ul li {
   font-family: "Noto Sans JP", sans-serif;
 }
 .main-info h1 {
-  color: var(--primary-orange);
+  color: var(--primary-black);
+  font-weight: bold;
   background-color: var(--primary-light-grey);
+  opacity: 90%;
   text-transform: uppercase;
+  padding: 0.1em 0.25em;
 }
 
 .typed-text {
@@ -153,8 +156,8 @@ nav ul li {
 }
 
 .profile-img {
-  width: 16rem;
-  border-radius: 50%;
+  width: 26rem;
+  border-radius: 10%;
   padding: 0.3rem;
   border: 1px solid var(--primary-orange);
 }
