@@ -25,6 +25,7 @@
     "react-scroll": "^1.8.2",
     "react-share": "^4.4.0",
     "react-typed": "^1.2.0",
+    "tsparticles": "^1.37.3",
     "web-vitals": "^1.0.1"
   },
   "scripts": {
