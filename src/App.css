@@ -161,7 +161,7 @@ nav ul li {
 
 .profile-img {
   width: 26rem;
-  border-radius: 10%;
+  border-radius: 15px;
   padding: 0.3rem;
   border: 1px solid var(--primary-orange);
 }

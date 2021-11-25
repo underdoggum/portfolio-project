@@ -1,5 +1,5 @@
 import React from "react"
-import netflix from "../images/netflix.png"
+import gymrift from "../images/gymrift-project-screenshot.png"
 import cityGuide from "../images/city-guide-app.png"
 import portfolio from "../images/portfolio.png"
 import taskManager from "../images/task-manager.png"
@@ -13,25 +13,31 @@ import "react-popupbox/dist/react-popupbox.css"
 
 const Portfolio = () => {
 
-  //Netflix
-  const openPopupboxNetflix = () => {
+  //Gymrift
+  const openPopupboxGymrift = () => {
     const content = (
       <div>
-        <img className="portfolio-image-popupbox" src={netflix} alt="portfolio image #???" />
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores accusantium quam fugit consequuntur esse beatae eos natus vero? Aspernatur, eaque?</p>
+        <img className="portfolio-image-popupbox" src={gymrift} alt="portfolio image #???" />
+        <p>This app allows users to track their daily workouts based on a 3-day split plan. This is a full-stack (MELN) app implementing Model-View-Controller architecture with RESTful routing and user authentication/authorization. Using MongoDB schemas and multiple one-to-many relationships, users may customize their workouts, including viewing form hints via the YouTube API.
+        </p>
         <b>GitHub: </b>
         <a className="hyper-link"
-          onClick={() => window.open("https://github.com/underdoggum/react-music-playlist-migrator")}>
-          https://github.com/underdoggum/react-music-playlist-migrator
+          onClick={() => window.open("https://github.com/underdoggum/seir_penguin_project_2")}>
+          https://github.com/underdoggum/seir_penguin_project_2
+        </a>
+        <br /><b>Deployed site: </b>
+        <a className="hyper-link"
+          onClick={() => window.open("https://nn-penguin-project2.herokuapp.com/")}>
+          https://nn-penguin-project2.herokuapp.com/
         </a>
       </div>
     )
     PopupboxManager.open({content})
   }
-  const popupboxConfigNetflix = {
+  const popupboxConfigGymrift = {
     titleBar: {
       enable: true,
-      text: "Netflix clone project",
+      text: "3-day Workout Planning Full-stack App",
     },
     faseIn: true,
     fadeInSpeed: 500,
@@ -118,8 +124,8 @@ const Portfolio = () => {
       <div className="container">
         <h1 className="text-uppercase text-center py-5">Portfolio</h1>
         <div className="image-box-wrapper row justify-content-center">
-          <div className="portfolio-image-box col-4" onClick={openPopupboxNetflix}>
-            <img className="portfolio-image" src={netflix} alt="portfolio image #1" />
+          <div className="portfolio-image-box col-4" onClick={openPopupboxGymrift}>
+            <img className="portfolio-image" src={gymrift} alt="portfolio image #1" />
             <div className="overflow"></div>
             <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
           </div>
@@ -143,7 +149,7 @@ const Portfolio = () => {
           </div>
         </div>
       </div>
-      <PopupboxContainer {...popupboxConfigNetflix} />
+      <PopupboxContainer {...popupboxConfigGymrift} />
       <PopupboxContainer {...popupboxConfigCityGuide} />
       <PopupboxContainer {...popupboxConfigPortfolio} />
       <PopupboxContainer {...popupboxConfigTaskManager} />
