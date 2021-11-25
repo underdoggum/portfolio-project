@@ -125,6 +125,8 @@ nav ul li {
   border-radius: 0;
   padding: 0.625rem 0.75rem 0.75rem 0.75rem;
   color: var(--primary-white);
+  text-decoration: none;
+  font-weight: bold;
   margin: 2rem;
 }
 
