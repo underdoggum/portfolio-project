@@ -1,6 +1,6 @@
 import React from "react"
 import gymrift from "../images/gymrift-project-screenshot.png"
-import cityGuide from "../images/city-guide-app.png"
+import triviaNight from "../images/Trivia-night-project-screenshot.png"
 import portfolio from "../images/portfolio.png"
 import taskManager from "../images/task-manager.png"
 
@@ -25,7 +25,8 @@ const Portfolio = () => {
           onClick={() => window.open("https://github.com/underdoggum/seir_penguin_project_2")}>
           https://github.com/underdoggum/seir_penguin_project_2
         </a>
-        <br /><b>Deployed site: </b>
+        <br />
+        <b>Deployed site: </b>
         <a className="hyper-link"
           onClick={() => window.open("https://nn-penguin-project2.herokuapp.com/")}>
           https://nn-penguin-project2.herokuapp.com/
@@ -45,24 +46,30 @@ const Portfolio = () => {
 
 
   //City Guide App
-  const openPopupboxCityGuide = () => {
+  const openPopupboxTriviaNight = () => {
     const content = (
       <div>
-        <img className="portfolio-image-popupbox" src={cityGuide} alt="portfolio image #???" />
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores accusantium quam fugit consequuntur esse beatae eos natus vero? Aspernatur, eaque?</p>
+        <img className="portfolio-image-popupbox" src={triviaNight} alt="portfolio image #???" />
+        <p>This JavaScript-based, 2-player, turn-taking trivia game allows players to compete in the Science trivia category with randomized questions and shows players scores as they play throughout the game. It uses Contentful as a headless CMS for storing trivia questions and uses a mobile-first design.</p>
         <b>GitHub: </b>
         <a className="hyper-link"
-          onClick={() => window.open("https://github.com/underdoggum/react-music-playlist-migrator")}>
-          https://github.com/underdoggum/react-music-playlist-migrator
+          onClick={() => window.open("https://github.com/underdoggum/seir_penguin_project_1")}>
+          https://github.com/underdoggum/seir_penguin_project_1
+        </a>
+        <br />
+        <b>Deployed site: </b>
+        <a className="hyper-link"
+          onClick={() => window.open("https://seir-penguin-project-1-roan.vercel.app/")}>
+          https://seir-penguin-project-1-roan.vercel.app/
         </a>
       </div>
     )
     PopupboxManager.open({content})
   }
-  const popupboxConfigCityGuide = {
+  const popupboxConfigTriviaNight = {
     titleBar: {
       enable: true,
-      text: "City Guide project",
+      text: "Trivia Night: Science",
     },
     faseIn: true,
     fadeInSpeed: 500,
@@ -130,8 +137,8 @@ const Portfolio = () => {
             <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
           </div>
           {/*  */}
-          <div className="portfolio-image-box col-4" onClick={openPopupboxCityGuide}>
-            <img className="portfolio-image" src={cityGuide} alt="portfolio image #2" />
+          <div className="portfolio-image-box col-4" onClick={openPopupboxTriviaNight}>
+            <img className="portfolio-image" src={triviaNight} alt="portfolio image #2" />
             <div className="overflow"></div>
             <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
           </div>
@@ -150,7 +157,7 @@ const Portfolio = () => {
         </div>
       </div>
       <PopupboxContainer {...popupboxConfigGymrift} />
-      <PopupboxContainer {...popupboxConfigCityGuide} />
+      <PopupboxContainer {...popupboxConfigTriviaNight} />
       <PopupboxContainer {...popupboxConfigPortfolio} />
       <PopupboxContainer {...popupboxConfigTaskManager} />
     </div>
