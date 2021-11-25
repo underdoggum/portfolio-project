@@ -94,14 +94,19 @@ nav ul li {
   font-family: "Noto Sans JP", sans-serif;
 }
 .main-info h1 {
-  color: var(--primary-orange);
+  color: var(--primary-black);
+  font-weight: bold;
   background-color: var(--primary-light-grey);
+  opacity: 90%;
   text-transform: uppercase;
+  padding: 0.1em 0.25em;
 }
 
 .typed-text {
   font-size: 2rem;
   color: var(--primary-white);
+  background-color: rgba(50, 50, 50, 0.5);
+  padding: 0 0.25em;
 }
 @media(max-width: 768px) {
   .main-info h1 {
@@ -120,6 +125,8 @@ nav ul li {
   border-radius: 0;
   padding: 0.625rem 0.75rem 0.75rem 0.75rem;
   color: var(--primary-white);
+  text-decoration: none;
+  font-weight: bold;
   margin: 2rem;
 }
 
@@ -153,8 +160,8 @@ nav ul li {
 }
 
 .profile-img {
-  width: 16rem;
-  border-radius: 50%;
+  width: 26rem;
+  border-radius: 10%;
   padding: 0.3rem;
   border: 1px solid var(--primary-orange);
 }

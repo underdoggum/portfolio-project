@@ -1,26 +1,12 @@
-# Welcome to my Porfolio!
+# Welcome to my Portfolio!
+## by Nathan Noack
 
-This is a React-based project, deployed via AWS Amplify, and can be viewed at \
-\
-nathannoack.com
+This is a showcase of my personal projects, some info about my journey into Web Development, and a way to contact me about anything from jobs to chatting about chess or anything you want!
+See Deployed site at https://www.nathannoack.com/
 
-This particular project uses Bootstrap for the core styling as well as a few NPM modules for pretty yet easy implementation into the website (React Particles, Responsive Carousel, and Popup Box, just to name a few).
-
-## List of Technologies
-#### Basic
- - HTML5
- - CSS3
- - JavaScript ES6
- - AWS Amplify
-
-#### Libraries / Techniques
+## Technologies
+ - React
+ - HTML / CSS (vanilla) / JavaScript
  - Bootstrap
- - Various npm modules for functionality
-
-
-
-
-
-
-
-
+ - AWS Amplify Deployment
+ - Various NPM modules
