@@ -59,9 +59,14 @@ nav ul li {
 
 /* for the logo */
 .navbar-brand {
-  max-width: 17.25rem;
-  padding: 0 !important;
+  color: var(--primary-white) !important;
+  position: absolute;
+  letter-spacing: 0.0375rem;
+  font-size: ;
+  
+  /* max-width: 17.25rem;
   height: 4rem !important;
+  margin: 0 auto; */
 }
 @media(max-width: 768px) {
   .navbar-brand {
