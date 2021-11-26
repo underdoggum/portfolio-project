@@ -1,7 +1,7 @@
 import React from "react"
 import gymrift from "../images/gymrift-project-screenshot.png"
 import triviaNight from "../images/Trivia-night-project-screenshot.png"
-import portfolio from "../images/portfolio.png"
+import portfolio from "../images/portfolio-project-screenshot.png"
 import unwasted from "../images/Unwasted-combined-screenshot.png"
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
@@ -34,6 +34,14 @@ const Portfolio = () => {
       </div>
     )
     PopupboxManager.open({content})
+    PopupboxManager.update({
+      content,
+      config: {
+        titleBar: {
+          text: "3-day Workout Planning Full-stack App",
+        },
+      },
+    });
   }
   const popupboxConfigGymrift = {
     titleBar: {
@@ -65,6 +73,14 @@ const Portfolio = () => {
       </div>
     )
     PopupboxManager.open({content})
+    PopupboxManager.update({
+      content,
+      config: {
+        titleBar: {
+          text: "Trivia Night: Science",
+        },
+      },
+    });
   }
   const popupboxConfigTriviaNight = {
     titleBar: {
@@ -81,7 +97,7 @@ const Portfolio = () => {
     const content = (
       <div>
         <img className="portfolio-image-popupbox" src={portfolio} alt="portfolio image #???" />
-        <p>This is what you're currently viewing--a showcase of my personal projects, some info about my journey into Web Development, and a way to contact me about anything from jobs to chatting about chess or anything you want! Drop me a line anytime, and I'll be happy to chat.</p>
+        <p>This is what you're currently viewing--a showcase of my personal projects, some info about my journey into Web Development, and a way to contact me about anything from jobs to chatting about chess or anything you want! Drop me a line, anytime, and I'll be happy to chat.</p>
         <b>GitHub: </b>
         <a className="hyper-link"
           onClick={() => window.open("https://github.com/underdoggum/portfolio-project")}>
@@ -90,6 +106,14 @@ const Portfolio = () => {
       </div>
     )
     PopupboxManager.open({content})
+    PopupboxManager.update({
+      content,
+      config: {
+        titleBar: {
+          text: "What you're currently viewing!",
+        },
+      },
+    });
   }
   const popupboxConfigPortfolio = {
     titleBar: {
@@ -120,8 +144,16 @@ const Portfolio = () => {
       </div>
     )
     PopupboxManager.open({content})
+    PopupboxManager.update({
+      content,
+      config: {
+        titleBar: {
+          text: "Un-wasted Project",
+        },
+      },
+    });
   }
-  const popupboxConfigTaskManager = {
+  const popupboxConfigUnwasted = {
     titleBar: {
       enable: true,
       text: "Un-wasted Project",
@@ -134,28 +166,28 @@ const Portfolio = () => {
   return (
     <div id="portfolio" className="portfolio-wrapper">
       <div className="container">
-        <h1 className="text-uppercase text-center py-5">Portfolio</h1>
-        <div className="image-box-wrapper row justify-content-center">
-          <div className="portfolio-image-box col-4" onClick={openPopupboxGymrift}>
-            <img className="portfolio-image" src={gymrift} alt="Gymrift project" />
+        <h1 className="text-uppercase text-center py-5">portfolio</h1>
+        <div className="image-box-wrapper row row-cols-auto justify-content-center">
+          <div className="portfolio-image-box" onClick={openPopupboxGymrift}>
+            <img className="portfolio-image" src={gymrift} alt="Netflix Clone Project..." />
             <div className="overflow"></div>
             <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
           </div>
-          {/*  */}
-          <div className="portfolio-image-box col-4" onClick={openPopupboxTriviaNight}>
-            <img className="portfolio-image" src={triviaNight} alt="Trivia Night project" />
+          {/* - */}
+          <div className="portfolio-image-box" onClick={openPopupboxTriviaNight}>
+            <img className="portfolio-image" src={triviaNight} alt="City Guide Project..." />
             <div className="overflow"></div>
             <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
           </div>
-          {/*  */}
-          <div className="portfolio-image-box col-4" onClick={openPopupboxPortfolio}>
-            <img className="portfolio-image" src={portfolio} alt="Portfolio project" />
+          {/* - */}
+          <div className="portfolio-image-box" onClick={openPopupboxPortfolio}>
+            <img className="portfolio-image" src={portfolio} alt="Portfolio React and Material UI Project..." />
             <div className="overflow"></div>
             <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
           </div>
-          {/*  */}
-          <div className="portfolio-image-box col-4" onClick={openPopupboxUnwasted}>
-            <img className="portfolio-image" src={unwasted} alt="Un-wasted project" />
+          {/* - */}
+          <div className="portfolio-image-box" onClick={openPopupboxUnwasted}>
+            <img className="portfolio-image" src={unwasted} alt="Task Manager React and Redux Project..." />
             <div className="overflow"></div>
             <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
           </div>
@@ -164,7 +196,7 @@ const Portfolio = () => {
       <PopupboxContainer {...popupboxConfigGymrift} />
       <PopupboxContainer {...popupboxConfigTriviaNight} />
       <PopupboxContainer {...popupboxConfigPortfolio} />
-      <PopupboxContainer {...popupboxConfigTaskManager} />
+      <PopupboxContainer {...popupboxConfigUnwasted} />
     </div>
   )
 }

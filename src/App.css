@@ -62,7 +62,6 @@ nav ul li {
   color: var(--primary-white) !important;
   position: absolute;
   letter-spacing: 0.0375rem;
-  font-size: ;
   
   /* max-width: 17.25rem;
   height: 4rem !important;
@@ -346,7 +345,6 @@ nav ul li {
 /*not working??? should be showing up horizontally*/
 /* also does not work AT ALL with phone devices */
 .portfolio-image-box {
-  /* width: 20% !important; */
   position: relative;
   margin: 1rem;
 }
@@ -393,6 +391,16 @@ nav ul li {
   padding: 0 0.5rem;
 }
 
+.hyper-link {
+  cursor: pointer;
+  color: var(--primary-orange);
+}
+
+.hyper-link:hover {
+  cursor: pointer;
+  color: var(--primary-red);
+}
+
 @media(max-width: 768px) {
   .portfolio-image-popupbox {
     width: 100%;
@@ -409,19 +417,9 @@ nav ul li {
   }
 }
 
-.hyper-link {
-  cursor: pointer;
-  color: var(--primary-orange);
-}
-
-.hyper-link:hover {
-  cursor: pointer;
-  color: var(--primary-red);
-}
 
 /**********TESTIMONIALS************/
 .testimonials {
-  background-image: url(images/testimonials-bg.jpg);
   background-size: cover;
   background-color: var(--primary-black);
   text-align: center;
@@ -583,7 +581,7 @@ textarea.form-control {
   }
 
   .contact-btn {
-    width: 100%;
+    width: 80%;
   }
 }
 

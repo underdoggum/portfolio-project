@@ -1,6 +1,5 @@
 import React from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-// import { faFacebookF, faGoogle } from "@fortawesome/free-brands-svg-icons"
 import { faCode, faDesktop, faChalkboardTeacher, faCalculator } from "@fortawesome/free-solid-svg-icons"
 
 const Services = () => {

@@ -44,7 +44,7 @@ const Contacts = () => {
     <div id="contacts" className="contacts">
       <div className="text-center">
         <h1>Contact me</h1>
-        <p>Please fill out the form below, and describe your job needs. I'll contact you soon!</p>
+        <p>Please fill out the form below, and describe what you'd like to chat about. I'll contact you soon!</p>
         <span className="success-message">{successMessage}</span>
       </div>
       <div className="container">
@@ -105,7 +105,7 @@ const Contacts = () => {
               <div className="text-center">
                 <textarea 
                   className="form-control"
-                  placeholder="In a few words, please describe your interest..."
+                  placeholder="In a few words, please describe what you'd like to talk about"
                   name="email"
                   {...register("description", { required: true })}
                   ></textarea>
