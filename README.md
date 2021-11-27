@@ -9,4 +9,4 @@ See Deployed site at https://www.nathannoack.com/
  - HTML / CSS (vanilla) / JavaScript
  - Bootstrap
  - AWS Amplify Deployment
- - Various NPM modules
+ - Various NPM react styling modules

@@ -59,9 +59,9 @@ nav ul li {
 
 /* for the logo */
 .navbar-brand {
-  max-width: 17.25rem;
-  padding: 0 !important;
-  height: 4rem !important;
+  color: var(--primary-white) !important;
+  position: absolute;
+  letter-spacing: 0.0375rem;
 }
 @media(max-width: 768px) {
   .navbar-brand {
@@ -161,7 +161,7 @@ nav ul li {
 
 .profile-img {
   width: 26rem;
-  border-radius: 10%;
+  border-radius: 15px;
   padding: 0.3rem;
   border: 1px solid var(--primary-orange);
 }
@@ -173,7 +173,7 @@ nav ul li {
 
 @media(max-width: 468px) {
   .profile-img {
-    width: 10rem;
+    width: 15rem;
   }
 }
 
@@ -228,6 +228,16 @@ nav ul li {
 
 .services .box:hover .circle {
   background: var(--primary-light-grey);
+}
+
+.services .box p {
+  line-height: 1.35em;
+}
+
+@media(max-width: 768px) {
+  .services .box p {
+    line-height: 1.5em;
+  }
 }
 
 
@@ -338,10 +348,7 @@ nav ul li {
   padding: 0 0.5rem;
 }
 
-/*not working??? should be showing up horizontally*/
-/* also does not work AT ALL with phone devices */
 .portfolio-image-box {
-  /* width: 20% !important; */
   position: relative;
   margin: 1rem;
 }
@@ -388,9 +395,23 @@ nav ul li {
   padding: 0 0.5rem;
 }
 
+.hyper-link {
+  word-wrap: break-word;
+  cursor: pointer;
+  color: var(--primary-orange);
+}
+
+.hyper-link:hover {
+  cursor: pointer;
+  color: var(--primary-red);
+}
+
 @media(max-width: 768px) {
   .portfolio-image-popupbox {
     width: 100%;
+  }
+  .popupbox-content p {
+    line-height: 1.3em;
   }
 }
 
@@ -402,80 +423,6 @@ nav ul li {
   .popupbox-wrapper {
     height: 100%;
   }
-}
-
-.hyper-link {
-  cursor: pointer;
-  color: var(--primary-orange);
-}
-
-.hyper-link:hover {
-  cursor: pointer;
-  color: var(--primary-red);
-}
-
-/**********TESTIMONIALS************/
-.testimonials {
-  background-image: url(images/testimonials-bg.jpg);
-  background-size: cover;
-  background-color: var(--primary-black);
-  text-align: center;
-  padding-bottom: 4rem;
-  margin-bottom: 0;
-  width: 100%;
-}
-
-.testimonials h1 {
-  color: var(--primary-orange);
-  padding: 3rem 0;
-  text-transform: uppercase;
-}
-
-.testimonials-content {
-  text-align: center;
-  max-width: 55rem;
-  margin: 0 auto 2rem auto;
-  background: var(--primary-transparent-black);
-}
-
-.myCarousel {
-  color: var(--primary-white);
-  background: transparent;
-  margin-top: -6%;
-  width: 54%;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 6%;
-  padding-bottom: 8%;
-  padding-left: 5%;
-  padding-right: 5%;
-  height: 17.875rem;
-}
-
-.myCarousel h3 {
-  color: var(--primary-orange);
-  font-weight: 600;
-  text-transform: uppercase;
-}
-
-.myCarousel p {
-  color: var(--primary-grey);
-}
-
-.carousel .slide img {
-  width: 10rem !important;
-  border-radius: 50%;
-  padding: 2rem 0;
-}
-
-.carousel .slide {
-  background: transparent !important;
-  height: 100% !important;
-}
-
-.carousel-root {
-  margin: auto !important;
-  margin-top: 3% !important;
 }
 
 
@@ -522,7 +469,7 @@ nav ul li {
 }
 
 .contacts textarea {
-  height: 11.95rem !important;
+  height: 12.2rem !important;
 }
 
 .contact-btn {
@@ -578,7 +525,7 @@ textarea.form-control {
   }
 
   .contact-btn {
-    width: 100%;
+    width: 80%;
   }
 }
 

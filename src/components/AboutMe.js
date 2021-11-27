@@ -15,16 +15,36 @@ const AboutMe = () => {
             About Me
           </h1>
           <p>
-            Hello! I'm Nathan. I am an aspiring Front-End Developer, utilizing:
+            Hello! I'm Nathan. I am an aspiring Full-Stack Web Developer with an array of modern technical skills, including:
             <br /><br />
-            <ul>
-              <li>HTML5</li>
-              <li>CSS3 (Bootstrap 4)</li>
-              <li>JavaScript (ES6)</li>
-              <li>React</li>
-              <li>NextJS</li>
-              <li>RESTful APIs</li>
-            </ul>
+
+            <div className="container">
+              <div className="row">
+                <div className="col-md-6">
+                  <ul>
+                    <li>HTML</li>
+                    <li>CSS (Bootstrap 5/Bulma)</li>
+                    <li>JavaScript (ES6)</li>
+                    <li>jQuery</li>
+                    <li>LiquidJS</li>
+                    <li>SASS</li>
+                    <li>Git (<a href="https://github.com/underdoggum" target="_blank" rel="noopener noreferrer">My GitHub</a>)</li>
+                  </ul>
+                </div>
+                <div className="col-md-6">
+                  <ul>
+                    <li>Node.js</li>
+                    <li>ExpressJS</li>
+                    <li>MongoDB</li>
+                    <li>React</li>
+                    <li>NextJS</li>
+                    <li>RESTful APIs</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            
             <br />
             I'm a Software Engineer and former Mechanical Engineer, with a focus on being a detail-oriented team player. Throughout the years, I've demonstrated a proven track record of developing effective results with continuous improvement and innovation. This, coupled with experience in trending web technologies has ignited my passion for web development. There is *always* more to create, more to teach, more to learn, and that sensational doctrine lies at the heart of this field. <br /><br />
             Overall, my goal is to blend a transparent, methodical approach to full-stack web development with a splash of creativity and a lifelong passion for learning.
