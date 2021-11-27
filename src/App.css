@@ -62,10 +62,6 @@ nav ul li {
   color: var(--primary-white) !important;
   position: absolute;
   letter-spacing: 0.0375rem;
-  
-  /* max-width: 17.25rem;
-  height: 4rem !important;
-  margin: 0 auto; */
 }
 @media(max-width: 768px) {
   .navbar-brand {
@@ -232,6 +228,16 @@ nav ul li {
 
 .services .box:hover .circle {
   background: var(--primary-light-grey);
+}
+
+.services .box p {
+  line-height: 1.35em;
+}
+
+@media(max-width: 768px) {
+  .services .box p {
+    line-height: 1.5em;
+  }
 }
 
 

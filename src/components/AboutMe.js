@@ -15,11 +15,11 @@ const AboutMe = () => {
             About Me
           </h1>
           <p>
-            Hello! I'm Nathan. I am an aspiring Front-End Developer, utilizing:
+            Hello! I'm Nathan. I am an aspiring Full-Stack Web Developer with an array of modern technical skills, including:
             <br /><br />
             <ul>
-              <li>HTML5</li>
-              <li>CSS3 (Bootstrap 4)</li>
+              <li>HTML</li>
+              <li>CSS (Bootstrap 5/Bulma)</li>
               <li>JavaScript (ES6)</li>
               <li>React</li>
               <li>NextJS</li>
