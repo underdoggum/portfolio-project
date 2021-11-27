@@ -96,7 +96,7 @@ const Portfolio = () => {
   const openPopupboxPortfolio = () => {
     const content = (
       <div>
-        <img className="portfolio-image-popupbox" src={portfolio} alt="portfolio image #???" />
+        <img className="portfolio-image-popupbox" src={portfolio} alt="React Portfolio project" />
         <p>This is what you're currently viewing--a showcase of my personal projects, some info about my journey into Web Development, and a way to contact me about anything from jobs to chatting about chess or anything you want! Drop me a line, anytime, and I'll be happy to chat.</p>
         <b>GitHub: </b>
         <a className="hyper-link"
@@ -129,7 +129,7 @@ const Portfolio = () => {
     const content = (
       <div>
         <img className="portfolio-image-popupbox" src={unwasted} alt="Un-wasted project" />
-        <p>This is a full-stack (MERN) customized e-commerce app where I led a team of three Software Developers as Scrum master/project manager. Utilizing our backgrounds in the foodservice and retail industries, we attempt to solve the problem of waste within those industries that we could not solve until we had the powerful tools of web development. This app lets users sign up as a seller or buyer, and depending on that choice, allows them to either list items for sale at discounted prices with CRUD functionality (seller), or view all items from all sellers and add to their shopping carts (buyer)--somewhat similar to a Craigslist for restaurants, but with a better user experience, we believe. Please note that this is an ongoing project.</p>
+        <p>This is a full-stack (MERN) customized e-commerce app where I led a team of three Software Developers as Scrum master/project manager. This app lets users sign up as a seller or buyer, and depending on that choice, allows them to either list items for sale at discounted prices with CRUD functionality (seller), or view all items from all sellers and add to their shopping carts (buyer)--somewhat similar to a Craigslist for restaurants, but with a better user experience for both parties we believe. Please note that this is an ongoing project.</p>
         <b>GitHub: </b>
         <a className="hyper-link"
           onClick={() => window.open("https://github.com/underdoggum/seir_penguin_project_3_frontend")}>

@@ -16,22 +16,22 @@ const Navbar = () => {
         <div className="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
           <ul className="navbar-nav">
             <li className="nav-item active">
-              <Link to="header" offset={-100} className="nav-link" href="#">Home <span className="sr-only"></span></Link>
+              <Link to="header" offset={-59} className="nav-link" href="#">Home <span className="sr-only"></span></Link>
             </li>
             <li className="nav-item">
-              <Link to="about" offset={-100} className="nav-link" href="#">About Me</Link>
+              <Link to="about" offset={-59} className="nav-link" href="#">About Me</Link>
             </li>
             <li className="nav-item">
-              <Link to="services" offset={-100} className="nav-link" href="#">Services</Link>
+              <Link to="services" offset={-59} className="nav-link" href="#">Skills</Link>
             </li>
             <li className="nav-item">
-              <Link to="experience" offset={-100} className="nav-link" href="#">Experience</Link>
+              <Link to="experience" offset={-59} className="nav-link" href="#">Experience</Link>
             </li>
             <li className="nav-item">
-              <Link to="portfolio" offset={-100} className="nav-link" href="#">Portfolio</Link>
+              <Link to="portfolio" offset={-59} className="nav-link" href="#">Portfolio</Link>
             </li>
             <li className="nav-item">
-              <Link to="contacts" offset={-100} className="nav-link" href="#">Contact</Link>
+              <Link to="contacts" offset={-59} className="nav-link" href="#">Contact</Link>
             </li>
           </ul>
         </div>

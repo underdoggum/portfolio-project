@@ -30,7 +30,7 @@ const Experience = () => {
             <h3>2018-Sept. 2021</h3>
             <p>Joined the Doka USA formwork civil engineering team and led the southeast branch as the Key User of multiple engineering softwares with continuous improvement efforts to revamp the engineers' user experiences</p>
             <p>Designed custom formwork solutions to meet or exceed clients' expectations</p>
-            <p>Began seriously learning Web Development in Jan. 2021 for side projects and became passionate for more</p>
+            <p>Began seriously learning Web Development in Feb. 2021 for side projects and became passionate for more</p>
           </div>
         </div>
         <div className="timeline-block timeline-block-left">
