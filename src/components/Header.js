@@ -7,7 +7,7 @@ const Header = () => {
     <div id="header" className="header-wrapper">
       <div className="main-info">
         <h1>
-          Full-Stack Web Developer
+          Software Engineer
         </h1>
         <Typed
           className="typed-text"
