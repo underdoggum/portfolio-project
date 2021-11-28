@@ -15,7 +15,7 @@ const AboutMe = () => {
             About Me
           </h1>
           <p>
-            Hello! I'm Nathan. I'm a Software Engineer/Full-Stack Web Developer with an array of modern technical skills, including:
+            Hey there! I'm Nathan. I'm a Software Engineer/Full-Stack Web Developer with an array of modern technical skills, including:
             <br /><br />
 
             <div className="container">
