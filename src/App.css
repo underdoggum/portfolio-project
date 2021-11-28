@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap');
 
 :root {
   --primary-white: #ffffff;
@@ -15,7 +15,7 @@
 }
 
 body {
-  font-family: "Noto Sans JP", sans-serif !important;
+  font-family: "Lato", sans-serif !important;
 }
 
 
@@ -29,18 +29,15 @@ nav {
 }
 
 /**********MENU LINKS************/
-/* styling of links */
 nav a.nav-link {
   letter-spacing: 0.0375rem;
   cursor: pointer;
 }
 
-/* styling of links */
 nav ul li {
   text-transform: uppercase;
 }
 
-/* styling of links */
 .navbar-nav > li > a {
   margin-right: 0.75rem;
   margin-left: 0.75rem;
@@ -48,7 +45,7 @@ nav ul li {
   border-bottom: 0.1875rem solid var(--primary-dark);
 }
 
-/* this is for mouseover highlights */
+/* this is for all mouseover highlights */
 .navbar-nav > li > a.active, .navbar-nav > li > a:focus {
   border-bottom: 0.1875rem solid var(--primary-orange);
 }
@@ -100,6 +97,7 @@ nav ul li {
   opacity: 90%;
   text-transform: uppercase;
   padding: 0.1em 0.25em;
+  z-index: 2;
 }
 
 .typed-text {
@@ -209,7 +207,7 @@ nav ul li {
 }
 
 .services .box {
-  height: 30rem;
+  height: fit-content;
   border-bottom: 0.3125rem solid var(--primary-orange);
   padding: 0.625rem;
   margin-bottom: 1.875rem;
@@ -235,6 +233,7 @@ nav ul li {
 }
 
 @media(max-width: 768px) {
+  
   .services .box p {
     line-height: 1.5em;
   }
@@ -277,6 +276,10 @@ nav ul li {
   clear: both;
 }
 
+.timeline-block p {
+  text-align: justify;
+}
+
 .timeline-block-right {
   float: right;
 }
@@ -284,6 +287,7 @@ nav ul li {
 .timeline-block-left {
   float: left;
   direction: rtl;
+  text-align: right;
 }
 
 .marker {
@@ -328,6 +332,7 @@ nav ul li {
     float: none;
     direction: ltr;
     width: 100%;
+    text-align: left;
   }
 }
 
@@ -393,6 +398,16 @@ nav ul li {
 .portfolio-image-popupbox {
   width: 45rem;
   padding: 0 0.5rem;
+  margin: 0 auto;
+}
+
+.portfolio-image-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.portfolio-image-container p {
+  padding-top: 1em;
 }
 
 .hyper-link {
@@ -550,4 +565,8 @@ textarea.form-control {
 
 .footer p {
   margin-bottom: 0;
+}
+
+.footer-links {
+  margin-bottom: 1.125em;
 }

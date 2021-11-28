@@ -16,7 +16,7 @@ const Portfolio = () => {
   // Gymrift
   const openPopupboxGymrift = () => {
     const content = (
-      <div>
+      <div className="portfolio-image-container">
         <img className="portfolio-image-popupbox" src={gymrift} alt="Gymrift 3-day split project" />
         <p>This app allows users to track their daily workouts based on a 3-day split plan. This is a full-stack (MELN) app implementing Model-View-Controller architecture with RESTful routing and user authentication/authorization. Using MongoDB schemas and multiple one-to-many relationships, users may customize their workouts, including viewing form hints via the YouTube API.
         </p>
@@ -56,7 +56,7 @@ const Portfolio = () => {
   // City Guide App
   const openPopupboxTriviaNight = () => {
     const content = (
-      <div>
+      <div className="portfolio-image-container">
         <img className="portfolio-image-popupbox" src={triviaNight} alt="Trivia Night project" />
         <p>This JavaScript-based, 2-player, turn-taking trivia game allows players to compete in the Science trivia category with randomized questions and shows players scores as they play throughout the game. It uses Contentful as a headless CMS for the trivia questions database and is styled with a mobile-first approach.</p>
         <b>GitHub: </b>
@@ -95,7 +95,7 @@ const Portfolio = () => {
   // Portfolio
   const openPopupboxPortfolio = () => {
     const content = (
-      <div>
+      <div className="portfolio-image-container">
         <img className="portfolio-image-popupbox" src={portfolio} alt="React Portfolio project" />
         <p>This is what you're currently viewing--a showcase of my personal projects, some info about my journey into Web Development, and a way to contact me about anything from jobs to chatting about chess or anything you want! Drop me a line, anytime, and I'll be happy to chat.</p>
         <b>GitHub: </b>
@@ -127,7 +127,7 @@ const Portfolio = () => {
   // Unwasted
   const openPopupboxUnwasted = () => {
     const content = (
-      <div>
+      <div className="portfolio-image-container">
         <img className="portfolio-image-popupbox" src={unwasted} alt="Un-wasted project" />
         <p>This is a full-stack (MERN) customized e-commerce app where I led a team of three Software Developers as Scrum master/project manager. This app lets users sign up as a seller or buyer, and depending on that choice, allows them to either list items for sale at discounted prices with CRUD functionality (seller), or view all items from all sellers and add to their shopping carts (buyer)--somewhat similar to a Craigslist for restaurants, but with a better user experience for both parties we believe. Please note that this is an ongoing project.</p>
         <b>GitHub: </b>

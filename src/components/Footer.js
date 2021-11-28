@@ -16,7 +16,7 @@ const Footer = () => {
     <div className="footer">
       <div className="container">
         <div className="row">
-          <div className="col-lg-4 col-md-6 col-sm-6">
+          <div className="col-lg-4 col-md-6 col-sm-6 footer-links">
             <div className="d-flex">
               <p>Atlanta, GA</p>
             </div>
@@ -27,7 +27,7 @@ const Footer = () => {
               <p><a href="mailto:natenoack@gmail.com">natenoack@gmail.com</a></p>
             </div>
           </div>
-          <div className="col-lg-3 col-md-2 col-sm-6">
+          <div className="col-lg-3 col-md-2 col-sm-6 footer-links">
             <div className="row">
               <div className="col">
                 <a href="#header" className="footer-nav">Home</a>
@@ -48,29 +48,29 @@ const Footer = () => {
               
               <FacebookShareButton
                 url={"https://github.com/underdoggum"}
-                quote={"Front-End Developer"}
-                hashtag="#frontend"
+                quote={"Full-Stack Developer"}
+                hashtag="#fullstack"
               >
                 <FacebookIcon className="mx-3" size={50} />
               </FacebookShareButton>
               <TwitterShareButton
                 url={"https://github.com/underdoggum"}
-                quote={"Front-End Developer"}
-                hashtag="#frontend"
+                quote={"Full-Stack Developer"}
+                hashtag="#fullstack"
               >
                 <TwitterIcon className="mx-3" size={50} />
               </TwitterShareButton>
               <RedditShareButton
                 url={"https://github.com/underdoggum"}
-                quote={"Front-End Developer"}
-                hashtag="#frontend"
+                quote={"Full-Stack Developer"}
+                hashtag="#fullstack"
               >
                 <RedditIcon className="mx-3" size={50} />
               </RedditShareButton>
               <LinkedinShareButton
                 url={"https://github.com/underdoggum"}
-                quote={"Front-End Developer"}
-                hashtag="#frontend"
+                quote={"Full-Stack Developer"}
+                hashtag="#fullstack"
               >
                 <LinkedinIcon className="mx-3" size={50} />
               </LinkedinShareButton>
