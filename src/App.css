@@ -70,7 +70,7 @@ nav ul li {
 /**********HEADER************/
 .header-wrapper {
   position: relative;
-  background: url(winding-road.jfif) no-repeat;
+  background: url(blank-computer.jpg) no-repeat;
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -82,24 +82,23 @@ nav ul li {
   position: absolute;
   top: 0;
   left: 0;
-  right: 0;
-  bottom: 0;
+  right: 30%;
+  bottom: 15%;
+  /* max-width: 60%; */
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
   font-family: "Lato", sans-serif;
 }
+
 .main-info h1 {
-  color: var(--primary-white);
+  color: var(--primary-black);
   font-weight: bold;
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
   opacity: 90%;
   text-transform: uppercase;
   padding: 0.1em 0.25em;
   z-index: 2;
-  backdrop-filter: blur(2px);
-
 }
 
 .typed-text {
@@ -107,8 +106,6 @@ nav ul li {
   color: var(--primary-white);
   background-color: rgba(50, 50, 50, 0.5);
   padding: 0 0.25em;
-  backdrop-filter: blur(2px);
-
 }
 @media(max-width: 768px) {
   .main-info h1 {
@@ -121,6 +118,10 @@ nav ul li {
 
 
 /**********HEADER MAIN OFFER BUTTON************/
+.main-info .btn-main-offer {
+  color: var(--primary-red);
+}
+
 .btn-main-offer {
   border: 1px solid var(--primary-red);
   text-transform: uppercase;
