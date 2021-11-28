@@ -27,16 +27,16 @@ const Services = () => {
           </div>
           <div className="col-lg-3 col-md-6 col-sm-6">
             <div className="box">
-              <div className="circle"><FontAwesomeIcon className="icon" icon={faChalkboardTeacher} size="2x" /></div>
-              <h3>Drive / Detail</h3>
-              <p>I’ve held personal grudges against getting “stuck” on a problem. Many of my colleagues have described me as an over-achiever or perfectionist, but I’d just call it “getting the project done” (apologies for the cliché). If I don’t know the answer, I research it. Obsessively. I read the docs. I ask around. I draw diagrams, program scratch code, pull from every resource until I can find the answer in a timely manner. The most important resource you’ll ever have is the ability to <em>learn well</em>.</p>
+              <div className="circle"><FontAwesomeIcon className="icon" icon={faCalculator} size="2x" /></div>
+              <h3>Critical-Thinking</h3>
+              <p>As a dean’s list student of the <a href="https://coe.gatech.edu/news/2015/09/undergraduate-engineering-programs-rank-high-latest-us-news-world-report-best-college" target="_blank" rel="noopener noreferrer">#2 college in the US</a> for my major, I've had no choice but to develop a strong aptitude for a systematic approach in problem-solving. Continuing to hone my skills in the professional engineering world, I’ve taken on several clients’ large-scale formwork projects (one of which totalled $5M in revenue), all the while ensuring that projects were completed to or above satisfaction in a timely manner.</p>
             </div>
           </div>
           <div className="col-lg-3 col-md-6 col-sm-6">
             <div className="box">
-              <div className="circle"><FontAwesomeIcon className="icon" icon={faCalculator} size="2x" /></div>
-              <h3>Critical-Thinking</h3>
-              <p>As a dean’s list student of the <a href="https://coe.gatech.edu/news/2015/09/undergraduate-engineering-programs-rank-high-latest-us-news-world-report-best-college" target="_blank" rel="noopener noreferrer">#2 college in the US</a> for my major, I've had no choice but to develop a strong aptitude for a systematic approach in problem-solving. Continuing to hone my skills in the professional engineering world, I’ve taken on several clients’ large-scale formwork projects (one of which totalled $5M in revenue), all the while ensuring that projects were completed to or above satisfaction in a timely manner.</p>
+              <div className="circle"><FontAwesomeIcon className="icon" icon={faChalkboardTeacher} size="2x" /></div>
+              <h3>Drive / Detail</h3>
+              <p>I’ve held personal grudges against getting “stuck” on a problem. Many of my colleagues have described me as an over-achiever or perfectionist, but I’d just call it “getting the project done” (apologies for the cliché). If I don’t know the answer, I research it. Obsessively. I read the docs. I ask around. I draw diagrams, program scratch code, pull from every resource until I can find the answer in a timely manner. The most important resource you’ll ever have is the ability to <em>learn well</em>.</p>
             </div>
           </div>
 
