@@ -84,7 +84,6 @@ nav ul li {
   left: 0;
   right: 30%;
   bottom: 15%;
-  /* max-width: 60%; */
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -95,16 +94,15 @@ nav ul li {
 .main-info h1 {
   color: var(--primary-black);
   font-weight: bold;
-  opacity: 90%;
   text-transform: uppercase;
   padding: 0.1em 0.25em;
   z-index: 2;
 }
 
 .typed-text {
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: var(--primary-white);
-  background-color: rgba(50, 50, 50, 0.5);
+  background-color: rgba(50, 50, 50, 0.8);
   padding: 0 0.25em;
 }
 @media(max-width: 768px) {
@@ -172,6 +170,8 @@ nav ul li {
 .about-heading {
   color: var(--primary-orange);
   text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.075em;
 }
 
 @media(max-width: 468px) {
@@ -191,6 +191,8 @@ nav ul li {
 .services h1 {
   color: var(--primary-dark);
   text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.075em;
 }
 
 .services .circle {
@@ -259,6 +261,8 @@ nav ul li {
 .experience h1 {
   text-transform: uppercase;
   color: var(--primary-orange);
+  font-weight: bold;
+  letter-spacing: 0.075em;
 }
 
 /* grey middle line */
@@ -349,7 +353,9 @@ nav ul li {
 }
 
 .portfolio-wrapper h1 {
-  color: var(--primary-orange)
+  color: var(--primary-black);
+  font-weight: bold;
+  letter-spacing: 0.075em;
 }
 
 .portfolio-image {
@@ -456,6 +462,8 @@ nav ul li {
   color: var(--primary-orange);
   padding: 1.5rem 0;
   text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.075em;
 }
 
 .contacts p {
