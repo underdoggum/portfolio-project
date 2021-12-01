@@ -38,7 +38,6 @@ const Experience = () => {
           <div className="timeline-content">
             <h3>Sept. 2021-Current</h3>
             <p>• Attending General Assembly's Software Engineering Immersive program. On a track to complete over 500 hours of implementing trending web technologies and building unique full-stack apps while collaborating with peers</p>
-            <p>• Exceeded instructors' expectations as one of the top-performers in the class</p>
           </div>
         </div>
 
