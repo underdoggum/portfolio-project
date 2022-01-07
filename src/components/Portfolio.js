@@ -3,6 +3,7 @@ import gymrift from "../images/gymrift-project-screenshot.png"
 import triviaNight from "../images/Trivia-night-project-screenshot.png"
 import portfolio from "../images/portfolio-project-screenshot.png"
 import unwasted from "../images/Unwasted-combined-screenshot.png"
+import typescriptBlog from '../images/typescript-blog-screenshot.png'
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faSearchPlus } from "@fortawesome/free-solid-svg-icons"
@@ -162,6 +163,44 @@ const Portfolio = () => {
     fadeInSpeed: 500,
   }
 
+  // MVP blog
+  const openPopupboxTypescriptBlog = () => {
+    const content = (
+      <div className="portfolio-image-container">
+        <img className="portfolio-image-popupbox" src={typescriptBlog} alt="MVP TypeScript Blog" />
+        <p>As the capstone project of the GA Software Engineering Immersive program, cohorts were given a single week to learn a completely new technology and implement into a full-stack web app. Within that week, I've learned how to leverage TypeScript as a method to more strictly control React components in a full-stack blog app with a Wordpress-like theming.</p>
+        <b>GitHub: </b>
+        <a className="hyper-link"
+          onClick={() => window.open("https://github.com/underdoggum/typescript-blog-frontend")}>
+          https://github.com/underdoggum/typescript-blog-frontend
+        </a>
+        <br />
+        <b>Deployed site: </b>
+        <a className="hyper-link"
+          onClick={() => window.open("https://mvp-blog.netlify.app/")}>
+          https://mvp-blog.netlify.app/
+        </a>
+      </div>
+    )
+    PopupboxManager.open({content})
+    PopupboxManager.update({
+      content,
+      config: {
+        titleBar: {
+          text: "Modern TypeScript Blog",
+        },
+      },
+    });
+  }
+  const popupboxConfigTypescriptBlog = {
+    titleBar: {
+      enable: true,
+      text: "Modern TypeScript Blog",
+    },
+    faseIn: true,
+    fadeInSpeed: 500,
+  }
+
   
   return (
     <div id="portfolio" className="portfolio-wrapper">
@@ -187,7 +226,13 @@ const Portfolio = () => {
           </div>
           {/* - */}
           <div className="portfolio-image-box" onClick={openPopupboxUnwasted}>
-            <img className="portfolio-image" src={unwasted} alt="Task Manager React and Redux Project..." />
+            <img className="portfolio-image" src={unwasted} alt="Ecommerce React app" />
+            <div className="overflow"></div>
+            <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
+          </div>
+          {/* - */}
+          <div className="portfolio-image-box" onClick={openPopupboxTypescriptBlog}>
+            <img className="portfolio-image" src={typescriptBlog} alt="Task Manager React and Redux Project..." />
             <div className="overflow"></div>
             <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
           </div>
@@ -197,6 +242,7 @@ const Portfolio = () => {
       <PopupboxContainer {...popupboxConfigTriviaNight} />
       <PopupboxContainer {...popupboxConfigPortfolio} />
       <PopupboxContainer {...popupboxConfigUnwasted} />
+      <PopupboxContainer {...popupboxConfigTypescriptBlog} />
     </div>
   )
 }
